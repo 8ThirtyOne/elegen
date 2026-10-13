@@ -1,0 +1,35 @@
+# Prevent the viewing of .htaccess and php.ini. Add the following to .htaccess
+<Files .htaccess>
+order allow,deny
+deny from all
+</Files>
+
+<Files php.ini>
+order allow,deny
+deny from all
+</Files>
+
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^elegen.8romans\.com$
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+
+RewriteRule ^index.php/?$ https://elegen.8romans.com [R=301,L]
+
+# Redirects .php extension to no extension
+# Grab every URL
+# To remove trailing slash
+RewriteCond %{THE_REQUEST} /([^.]+)\.php [NC]
+RewriteRule ^ /%1 [NC,L,R]
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*?)/?$ /$1.php [NC,L]
+
+ErrorDocument 404 /404
+ErrorDocument 403 /404
+ErrorDocument 500 /500
+
+# Dynamic Redirects
+RewriteRule ^event/([A-Za-z0-9-]+)/?$ event/single-event.php?name=$1 [L]
+RewriteRule ^news-events/([A-Za-z0-9-]+)/?$ news-events/press-releases-detail.php?title=$1 [L]
+RewriteRule ^content/([A-Za-z]+)/([A-Za-z0-9-]+)?$ content/view-pdf.php?dept=$1&name=$2 [L]
+RewriteRule ^resources/videos/([A-Za-z0-9-]+)/?$ resources/videos/video-page.php?name=$1 [L]
+RewriteRule ^company/elegen-team/([A-Za-z0-9-]+)/?$ company/elegen-team/profile.php?name=$1 [L]

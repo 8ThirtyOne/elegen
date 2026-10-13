@@ -1,0 +1,225 @@
+.hero-section h1 sup {
+    font-size: 16px
+}
+.left-hero-content{
+    margin-top: 260px;
+    margin-left: 30px;
+    position: relative
+}
+
+.hero-section video{
+    position: absolute;
+    top: -60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    pointer-events: none;
+    opacity: 1;
+    object-fit: cover;
+    z-index: 0
+}
+
+#main-slider{height:950px;background:#fff;margin:0 0 80px 0}
+#main-slider .slider-arrow{display:none}
+#main-slider .slide-btn{background:#ccc}
+#main-slider .slide-btn.playing{background:#71C1C3}
+
+#new-dna-slide{width:100%}
+#new-dna-slide .center-paragraph{
+    width:95%
+}
+#new-dna-slide .center-paragraph h4{margin-top:0}
+#new-dna-slide .key-benefits{float:left;margin-bottom:40px}
+#new-dna-slide .key-benefits ul{
+  width:85%;
+  margin:0 auto;
+}
+#new-dna-slide .key-benefits li{
+    background:url('../img/common/circle-fill.svg') no-repeat left center;
+    background-size:20px;
+    margin-right:2%;
+    padding-left:4%;  
+    font:27px geom-graphic
+}
+#new-dna-slide .key-benefits li:first-child{background:none}
+#main-slider .tm-svg{fill:#71c1c3;width:32px;margin-left:-5px}
+
+/*-----------------------------------------------------------------------*/
+
+#accuracy-fig{margin:0 auto;width:80%}
+
+.draw-lines {
+    stroke: #7c868c;
+    stroke-width: 1;
+    stroke-dasharray: 300px;
+    stroke-dashoffset: 300px;
+    animation-name: draw;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.draw-graph {
+  stroke:#BE2026;
+  stroke-width:1.5;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+  stroke-miterlimit:10;
+     stroke-dasharray: 300px;
+    stroke-dashoffset: 300px;
+      animation-name: draw;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#sequence-table h4{padding-bottom:15px}
+#sequence-table h5{text-align:left}
+
+/*---------------- FIGURE DIAGRAMS -------------*/
+
+.diagram-mobile-nav {
+    display: none;
+    position:relative;
+    width: 95%;
+    height:40px;
+    float:left
+}
+.diagram-mobile-nav li{
+    position:relative;
+    cursor:pointer
+}
+.diagram-mobile-nav li:nth-child(1) {
+    float:left
+}
+.diagram-mobile-nav li:nth-child(2) {
+    float:right
+}
+.diagram-mobile-nav svg{
+    position:absolute;
+    fill:#ccc;
+    width:35px
+}
+
+.mobile-wrap{
+  transition:transform .3s cubic-bezier(0, .52, 0, 1)
+}
+
+/*------------------- HIGH ACCURACY GRAPH SVG ----------------------*/
+.cls-1,.cls-2,.cls-3{stroke-width:1.5px}.cls-1,.cls-2,.cls-3,.cls-4,.cls-5,.cls-6{fill:none;stroke-linejoin:round}
+.cls-1,.cls-2,.cls-3,.cls-4,.cls-6{stroke-linecap:round}.cls-1,.cls-3,.cls-4{stroke:#54565a}.cls-2{fill:none}
+.cls-3{stroke-dasharray:0 0 2 3.99}.cls-4{stroke-dasharray:0 0 2 4;}.cls-4,.cls-6{stroke-width:2px;}.cls-7{fill:#f05a28}
+.cls-8{fill:#fff;}.cls-9{fill:#231f20}.cls-10{fill:#19d3c5}.cls-11{fill:#6d6e70}.cls-12{fill:#58595b}
+.cls-5{stroke:#bfbebe;stroke-width:.75px}.cls-6{stroke:#bf2026}
+/*----------------------------------------------------------------------*/
+
+/*------------------- ELEGEN BUILD STATE GRAPH SVG -------------------------*/
+.elb2{fill:#f7931e}.elb3{fill:#fff}.elb7{fill:#6abf4b}.elb8{fill:#22b573}
+
+/*////////////////////////////////////////////////////////
+-------------------------- RESIZE --------------------------
+/////////////////////////////////////////////////////////*/
+
+@media all and (max-width: 1285px) {
+    .left-hero-content{
+        margin-top: 200px;
+        margin-left:0;
+    }
+
+    #hero-note-right{
+        bottom:-150px
+    }
+}
+
+@media all and (max-width: 1265px) {
+    #new-dna-slide .key-benefits ul{width:80%;min-width:850px}
+    #new-dna-slide .key-benefits li{font: 25px geom-graphic}
+}
+
+@media all and (max-width: 1200px) {
+   .center-paragraph{width: 90%}
+}
+
+@media all and (max-width: 950px) {
+   .center-paragraph{width: 100%}
+    #new-dna-slide .key-benefits{
+      float: left;
+      width:100%;
+      min-width:auto;
+      padding-top:0
+     }
+
+     #new-dna-slide .key-benefits ul{
+        width:100%;
+        min-width: auto
+     }
+
+     #new-dna-slide .key-benefits ul li {
+        float: none;
+        margin:0 0 10px 0;
+        padding-left:0;
+        font-size:20px;
+        background:none
+     }
+     #new-dna-slide .key-benefits ul li:first-child{padding-top:0}
+     #new-dna-slide .key-benefits ul li:before, .key-benefits li:after{height:0}
+}
+
+@media all and (max-width: 845px) {
+   .hero-section video{display:none}
+}
+
+@media all and (max-width:770px) {
+    .left-hero-content{
+        margin-top: 120px;
+        margin-left:0;
+    }
+
+    #hero-note-right{
+        bottom:-100px;
+        right: 0;
+    }
+}
+
+@media all and (max-width:700px) {
+    .diagram-mobile-nav{display:block}
+    #elegen-accuracy-graph, #elegen-build-fig{overflow:hidden;width:100%;position:relative}
+    .mobile-wrap{min-width:740px;width:100%;position:relative;margin-top:50px}
+}
+
+@media all and (max-width: 670px) {
+    .left-hero-content{
+        margin: 20% 0 30% 0;
+        height: auto
+    }
+
+    #hero-note-right{
+        bottom:0;
+        right:0;
+        position: relative;
+        margin:15% auto 0 auto;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 736px) {
+    .mobile-iframe {display: block}
+    #main-slider, .section-slider{height:auto}
+    #main-slider .slide{position:relative;float:left;z-index:0;opacity:1;display:block}
+    .slide .center-paragraph{margin:0 0 20% 0;width:100%}
+    #elegen-accuracy, #elegen-build-state{float:none} /* float none to fix overflow */
+    .diagram-mobile-nav{width:90%}
+} 

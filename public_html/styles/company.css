@@ -1,0 +1,268 @@
+#contact-form h1{
+ font-size:34px;
+ padding:10px 0 20px 0
+}
+
+.hero-section p{font-size:18px;margin-bottom:0}
+
+#contact-form h4{margin-bottom:0;font:400 14px protipo}
+
+#contact-form form p{font:400 16px/1.4 geogro-light}
+
+/*---------------------- LEADERSHIP -----------------------*/
+#leadership-hero{
+background:url('../img/company/hero-elegen-leadership-01s.jpg') no-repeat left top;
+}
+#leadership-section{
+    margin: 80px 0;
+}
+
+#leadership-section .col-box{
+    padding-bottom: 20px;
+}
+#leadership-section .center-icon{
+    width: 50%;
+}
+#leadership-section h4{
+    font: 500 20px protipo;
+    color: #47c0bb;
+    margin-bottom: 10px
+}
+
+#leadership-section h5{
+    font: 400 16px protipo;
+    color: #54565b;
+}
+
+#leadership-section .green-box-desc a{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    color: #71C1C3;
+    border: 1px solid #71C1C3;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+#leadership-section svg{
+  position:absolute;
+  left:5px;
+  top:3px;
+  width:40px;
+}
+
+#leadership-section .green-box-desc a:hover{
+    color: #377476;
+    border: 1px solid #377476
+}
+
+#leadership-section .thmb-with-shadow{
+    margin-bottom:40px;
+}
+
+#leadership-section .hover-thmb:before {
+    top:0;
+    width:46%;
+    height:93%;
+    margin:auto;
+    border-radius:50%
+}
+
+#leadership-section .download-hover{
+    width:100%
+}
+
+/*------POPUP--------*/
+.leadership-box{
+ position:relative;
+ margin:0 auto;
+ width:50%;
+ min-width:300px;
+ max-width:600px;
+ height:auto;
+ background:#fafafa;
+ padding:40px 3% 2% 3%
+}
+.mfp-zoom-in .mfp-with-anim{opacity:0;transition: all 0.2s ease-in-out;transform:scale(0.8)}
+.mfp-zoom-in.mfp-bg{opacity:0;transition:all 0.3s ease-out}
+.mfp-zoom-in.mfp-ready .mfp-with-anim{opacity:1;transform: scale(1)}
+.mfp-zoom-in.mfp-ready.mfp-bg{opacity:0.8}
+.mfp-zoom-in.mfp-removing .mfp-with-anim{transform: scale(0.8);opacity:0}
+.mfp-zoom-in.mfp-removing.mfp-bg{opacity:0}
+
+.leadership-box h4{margin:0 0 20px 0;font:27px protipo;color:#000}
+.leadership-box em{display:block;font:16px geogro-light}
+.leadership-box p{font:400 15px/1.7 protipo; color: #54565b; margin-bottom:20px}
+
+.leadership-box .mfp-close{position: absolute; right: 0;top: 0px; width: 35px; height: 35px; color: #fff; background: #71C1C3; z-index: 1100; font: 30px protipo; display: block}
+.leadership-box .mfp-close:hover, .leadership-box .mfp-close:focus{color:#fff}
+.leadership-box .mfp-close:active{background:#71C1C3}
+
+/*-------------- EMPLOYEE SPOTLIGHT ------------------*/
+
+#spotlight-hero{
+  background-color:#56575C;
+  background-image:-webkit-linear-gradient(30deg, #5FB6A5 65%, #56575C 35%);
+  color:#000
+}
+
+#spotlight-hero .left-hero-content{
+    margin-top:250px;
+    width:58%
+}
+
+#spotlight-hero p{margin:0}
+
+#spotlight-hero h1{
+ font-size:28px;
+ font-weight:500
+}
+
+.hero-section .quote{fill:#000}
+#spotlight-hero svg{width:42px}
+#spotlight-hero .left-quote{transform: rotate(180deg) scaleX(1)}
+#spotlight-hero .right-quote{}
+
+#spotlight-hero h2{font-size:26px;font-weight:500;margin-bottom:5px}
+#spotlight-hero h3{color:#000;font-size:24px}
+
+#employee-headshot{
+ width:30%;
+ float:right;
+ margin-top:250px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+-webkit-box-shadow: 0px 0px 18px 1px rgba(51,51,51,1);
+-moz-box-shadow: 0px 0px 18px 1px rgba(51,51,51,1);
+box-shadow: 0px 0px 18px 1px rgba(51,51,51,1);
+}
+
+
+/*------------------------- INVESTORS --------------------*/
+#investors-hero{
+background:url('../img/company/hero-elegen-investors-01c.jpg') no-repeat left top;
+}
+
+#investors-hero h1{
+font-weight: 400
+}
+
+#investors-hero #hero-note-right{
+bottom: -260px;
+color: #3A686A;
+}
+.investors-section .col-box{
+ height: 200px;
+ padding-top: 50px;
+}
+
+.investors-section .center-icon{
+ width: 80%;
+ margin-bottom:30px;
+}
+
+.investors-section p{
+   padding-bottom:30px;
+   margin-bottom: 0;
+   font: 14px/1.8 protipo;
+}
+
+.investors-col2{
+    margin-bottom:110px;
+}
+
+.investors-col2 .center-paragraph{
+    width: 67.5%;
+}
+
+.investors-col2 .text-paragraph{
+  width: 48.5%;
+}
+
+/*---------------- CAREERS -----------------------*/
+#careers-hero{
+background:url('../img/company/hero-elegen-careers-01c.jpg') no-repeat left top;
+}
+
+/*---------------- PRIVACY ----------------------*/
+
+#privacy-policy{
+    margin-top: 150px;
+}
+
+#privacy-policy h2{
+    margin-bottom: 30px;
+}
+
+#privacy-policy .text-paragraph{
+    width: 100%;
+    text-align:left;
+}
+
+#privacy-policy p{
+    margin-left: 50px;
+}
+
+#privacy-policy h4, #privacy-policy ul, .indent-policy{
+    margin-left: 0px;
+    font-size: 19px;
+}
+
+
+#privacy-policy ul li{
+font: 14px/1.5 protipo;
+color: #54565b;
+margin-bottom:20px;
+}
+
+#privacy-policy em{
+ font-weight:500;
+}
+
+.policy-number{
+    float:left;
+    width:5%;
+}
+
+.policy-list{
+ float: left;
+ width: 95%;
+}
+
+#error-box{margin-left: 1.5%}
+
+/*////////////////////////////////////////////
+------------------- RESIZE -------------------
+/////////////////////////////////////////////*/
+
+@media all and (max-width: 845px) {
+    .investors-section .col-box{
+      height:auto;
+      margin-bottom:5%
+    }
+    .investors-col2{
+     margin-bottom:110px;
+    }
+
+    .investors-col2 .center-paragraph, .investors-col2 .text-paragraph{
+      width:100%;
+      float: left;
+    }
+    .investors-col2{
+     margin-bottom:20%;
+    }
+}
+
+@media all and (max-width: 736px) {
+    .col3{
+        width: 100%;
+        float: left;
+        padding: 0;
+        height:auto;
+        margin-bottom:10%;
+    }
+}

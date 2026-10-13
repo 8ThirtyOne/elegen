@@ -1,0 +1,202 @@
+
+/*----------------- PRESS RELEASES ------------------*/
+.btn{
+	border-radius: 20px;
+	border: 2px solid #71C1C3;
+	padding:10px 30px;
+	color: #71C1C3
+}
+#press-section{
+	padding-top:30px;
+	padding-bottom:50px
+}
+
+#press-section:nth-child(odd){
+	background: #f2f2f2
+}
+
+#press-list article{
+	position: relative;
+	float:left;
+	width:100%
+}
+
+.press-article{
+	width:80%
+}
+
+.press-article h4{
+	margin-bottom:30px;
+	font:400 16px protipo;
+	color:#47c0bb
+}
+
+.press-article h5{
+	margin-bottom:10px;
+	font:400 15px protipo
+}
+
+.press-title{
+ color: #111921;
+ font:22px protipo;
+ font-weight:bold
+}
+
+.press-text{
+  margin-top:20px;
+  font: 15px/1.5 protipo
+}
+
+.press-btn{
+	position: absolute;
+	top:20px;
+	right:0%;
+	font:500 17px protipo
+}
+
+.press-btn:hover{
+	border-color: #377476;
+	color: #377476
+}
+
+.press-title:hover{
+	color: #377476
+}
+
+#audio-box{position:absolute;right:0;bottom:2%}
+
+/*------------------- SINGLE PRESS PAGE --------------*/
+
+#page-nav{
+	float: left;
+	width: 100%;
+	margin-bottom:60px
+}
+
+#page-nav a:hover{
+	border-color: #377476;
+	color: #377476
+}
+
+#page-nav a:first-child{float:left}
+#page-nav a:last-child{float:right}
+#single-press-page{
+	padding-top: 160px;
+	padding-bottom:60px
+}
+#single-press-date{float:left}
+#single-press-date p{font:500 16px protipo;}
+#press-share{float:right}
+#press-share li{float:left;margin-right:10px}
+#press-share li a{
+    width: 30px;
+    height:30px;
+    color: #71C1C3;
+    border: 1px solid #71C1C3;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    text-align: center;
+    display: block;
+    margin: 0 auto
+ }
+#press-share li a:hover{
+	border-color: #377476;
+	color: #377476
+}
+
+#press-share a i{
+    font-size: 20px;
+    margin-top:5px
+}
+
+#press-article{
+	clear: both;
+	text-align:left
+}
+#press-article h4{font-size: 20px;margin-bottom:10px}
+
+#press-source{
+	font:18px protipo;
+	margin-bottom:20px
+}
+
+.press-body p{padding-bottom:10px}
+.press-sub-text{margin-top:10px}
+.press-body .body-subheading{font-weight: bold;padding-bottom:0;margin-top:20px}
+.press-body .highlight{font-weight: bold}
+.press-body ul{margin-bottom:20px}
+.press-body .list-heading{font-weight: bold}
+.press-body li{margin-bottom:5px;font:16px/1.6 protipo}
+
+/*---------------- EVENTS ------------------*/
+
+.event-list{
+ margin-top:30px
+}
+
+.event-thmb{
+  float:left;
+  width:20%;
+  margin-right:4%;
+  margin-top:3px;
+  text-align: center
+}
+
+.event-thmb .shadow-bg{
+	background:#fff;
+	-webkit-box-shadow: 1px 1px 3px 2px #ddd;
+    -moz-box-shadow: 1px 1px 3px 2px #ddd;
+    box-shadow: 1px 1px 3px 1px #ddd
+}
+
+.event-thmb p{
+  margin-top:20px;
+  color:#47c0bb;
+  font:500 17px protipo
+}
+
+.event-thmb svg{
+	width:25px;
+	fill:#47c0bb;
+	vertical-align:bottom;
+	margin-right:4px
+}
+
+.event-list article{
+  float:left;
+  width:76%
+}
+
+.event-sub{
+ font: 16px/1.5 protipo;
+ margin-top:10px
+}
+
+.event-list article h4{
+  font-size:25px;
+  margin:20px 0;
+  text-transform:uppercase
+}
+
+.event-list article h5{
+	font:18px geogro-medium
+}
+
+.event-body{
+	line-height:1.5;
+	font-size:15px;
+	margin-top:20px
+}
+
+/*---------------- RESIZE ------------------*/
+@media all and (max-width: 1285px) {
+ #single-press-page{padding-top:5%;padding-bottom: 5%;}
+}
+@media all and (max-width: 1100px) {
+.press-article{
+ 	float: none;
+ 	margin: 0 auto;
+ 	text-align: center
+ }
+ .press-btn{top:0;right:0;position:relative;width:40px;margin:20px auto 0 auto}
+}
